@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Divider } from 'antd';
+import './about.css'
 
 export default function About() {
   return (
     <div>
-        <h3>about me</h3>
+        <Divider id='about'><h3>about me</h3></Divider>
+
+        <div id='about-container'>
 
         <h4>location, location, location...</h4>
         <p>Born and raised in Romania's capital city, Bucharest.</p>
@@ -16,6 +20,8 @@ export default function About() {
         <p>I'm just starting my career in Software Development, I'm passionate about technology and what the IT world has to offer.</p>
         <p>Also, I'm looking for the next opportunity to improve my coding skills, and maybe broaden my experience with the Agile Methodologies I studied in the past year.</p>
         <p>I strongly believe in continous learning, adaptability, and the fact that "teamwork makes the dream work".</p>
+        
+        </div>
     </div>
   )
 }

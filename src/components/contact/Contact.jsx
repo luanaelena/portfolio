@@ -1,25 +1,47 @@
-import React from 'react'
+import React from 'react';
+import { Divider } from 'antd';
+import {Button, Form, Input} from 'antd';
+import './contact.css'
 
 export default function Contact() {
+    const {TextArea} = Input;
   return (
     <div>
-        <h3>contact me</h3>
+        <Divider id='contact'><h3>contact me</h3></Divider>
+
+        <div id='contact-container'>
 
         <p>You can reach me on <a href="https://www.linkedin.com/in/luana-buca/">linkedIn</a> or see the code behind my projects on my <a href="#">GitHub</a> profile.</p>
         <p>You can also sent me an email by using the form below. Whichever you prefer.</p>
 
-        <div className='form'>
-            <label htmlFor="name">Name: </label>
-            <input type="text" className='input-item' id='name' />
+        <Form
+         labelCol={{
+            span: 7,
+         }}
+         wrapperCol={{
+            span: 10,
+         }}
+         layout='horizontal'
+        >
+            <Form.Item label={<label style={{color: '#ebe2db'}}>Name: </label>}>
+                <Input/>
+            </Form.Item>
 
-            <label htmlFor="email">Email: </label>
-            <input type="email" className='input-item' id='email' />
+            <Form.Item label={<label style={{color: '#ebe2db'}}>Email: </label>}>
+                <Input/>
+            </Form.Item>
 
-            <label htmlFor="message">Message: </label>
-            <input type="textarea" className='input-item' id='message' />
+            <Form.Item label={<label style={{color: '#ebe2db'}}>Message: </label>}>
+                <TextArea rows={7}/>
+            </Form.Item>
 
-            <button id='send-btn' type='submit'>Send</button>
+            <Form.Item>
+                <Button id='send-btn'>Send</Button>
+            </Form.Item>
+        </Form>
+
         </div>
+
     </div>
   )
 }

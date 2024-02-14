@@ -1,0 +1,15 @@
+.page{
+    max-width: 800px;
+    margin: auto;
+}
+
+body{
+    background-color: #292929;
+    color: #ebe2db;
+}
+
+
+.ant-divider-horizontal.ant-divider-with-text-center::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after{
+    border-top: 1px solid #ebe2db;
+}

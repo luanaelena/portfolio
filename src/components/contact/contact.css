@@ -1,0 +1,30 @@
+#contact-container{
+    text-align: center;
+    padding: 50px;
+}
+
+#send-btn{
+    border-radius: 8px;
+    padding: 2px 10px;
+    font-size: 16px;
+    /* background-color: #FC0FC0; */
+    border: #f81894 2px solid;
+    background: radial-gradient(#FC0FC0, #f81894);
+    color: black;
+    font-weight: 500;
+    margin-left: 315px;
+}
+
+p>a{
+    color: #FC0FC0;
+}
+
+p>a:hover{
+    text-decoration: underline;
+    color: #FC0FC0;
+}
+
+#contact{
+    color: #ebe2db;
+}
+
